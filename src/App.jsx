@@ -1,24 +1,49 @@
-// ============================================
-// APP — Temporary placeholder
-// Will be fully replaced in Phase 8 with React Router + Layout
-// ============================================
+import React from 'react';
+import { Routes, Route } from 'react-router';
+import { Layout } from './components/Layout';
+import { navItems } from './config/navigation';
 
-function App() {
+import { Home } from './pages/Home';
+import { ActivityLogs } from './pages/ActivityLogs';
+import { Skills } from './pages/Skills';
+import { Gallery } from './pages/Gallery';
+import { Reflections } from './pages/Reflections';
+import { AboutCompany } from './pages/AboutCompany';
+import { Certificate } from './pages/Certificate';
+
+const pageComponents = {
+  Home,
+  ActivityLogs,
+  Skills,
+  Gallery,
+  Reflections,
+  AboutCompany,
+  Certificate
+};
+
+const App = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center">
-      <div className="glass rounded-xl p-12 text-center max-w-lg">
-        <h1 className="text-4xl font-bold mb-4 gradient-text font-[family-name:var(--font-headline)]">
-          OJT Narrative Report
-        </h1>
-        <p className="text-on-surface-variant text-lg mb-2">
-          Mistiso A. Judyawon — BSCS
-        </p>
-        <p className="text-on-surface-variant/60 text-sm">
-          🚧 Building in progress — Phase 2 complete
-        </p>
-      </div>
-    </div>
-  )
-}
+    <Routes>
+      <Route element={<Layout />}>
+        {navItems.map((item) => {
+          const PageComponent = pageComponents[item.pageKey];
+          return (
+            <Route 
+              key={item.path} 
+              path={item.path} 
+              element={PageComponent ? <PageComponent /> : <div className="text-white p-8">Not Found</div>} 
+            />
+          );
+        })}
+        <Route path="*" element={
+          <div className="text-white text-center p-20">
+            <h2 className="text-4xl font-bold text-[#ff716c] font-sora mb-4">404</h2>
+            <p className="text-[#83b2c8]">Page not found.</p>
+          </div>
+        } />
+      </Route>
+    </Routes>
+  );
+};
 
-export default App
+export default App;
