@@ -42,8 +42,8 @@ export const profile = {
 
   // Social Links
   socials: [
-    { name: 'Portfolio', url: '#', icon: 'Globe' },
-    { name: 'Facebook', url: '#', icon: 'Facebook' },
+    { name: 'Portfolio', url: 'https://mistisojudyawon-portfolio.vercel.app/', icon: 'Globe' },
+    { name: 'Facebook', url: 'https://www.facebook.com/mistiso.judyawon.2025/', icon: 'Facebook' },
     { name: 'Instagram', url: '#', icon: 'Instagram' },
     { name: 'X', url: '#', icon: 'Twitter' },
   ],
