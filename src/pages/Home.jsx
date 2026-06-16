@@ -57,7 +57,7 @@ export const Home = () => {
                 title={social.name}
                 className="flex items-center justify-center w-12 h-12 rounded-full bg-[#002b3d]/50 border border-white/10 text-[#83b2c8] hover:text-white hover:bg-[#83aaff]/20 hover:border-[#83aaff]/40 transition-all duration-300 group"
               >
-                <IconResolver icon={social.icon} className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
+                <IconResolver name={social.icon} className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
               </a>
             ))}
           </div>
