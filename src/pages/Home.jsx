@@ -7,7 +7,7 @@ import { profile } from '../data/profile';
 import { useTypingEffect } from '../hooks/useTypingEffect';
 
 export const Home = () => {
-  const { text } = useTypingEffect(profile.heroGreeting + ' ' + profile.firstName, { speed: 80 });
+  const { text } = useTypingEffect(profile.heroGreeting + ' ' + profile.firstName, { speed: 80, loop: true });
 
   return (
     <PageTransition>
