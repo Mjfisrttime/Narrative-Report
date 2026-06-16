@@ -5,6 +5,7 @@ import { StatGrid } from '../components/StatGrid';
 import { GlassCard } from '../components/GlassCard';
 import { profile } from '../data/profile';
 import { useTypingEffect } from '../hooks/useTypingEffect';
+import { IconResolver } from '../components/IconResolver';
 
 export const Home = () => {
   const { text } = useTypingEffect(profile.heroGreeting + ' ' + profile.firstName, { speed: 80, loop: true });
@@ -32,7 +33,7 @@ export const Home = () => {
         </section>
 
         {/* Bio Section */}
-        <section>
+        <section className="flex flex-col gap-6">
           <GlassCard padding="xl" hover="glow" glowColor="secondary">
             <h2 className="text-2xl font-bold font-sora text-white mb-4 flex items-center gap-3">
               <span className="w-8 h-8 rounded-full bg-[#ac8aff]/20 flex items-center justify-center text-[#ac8aff]">
@@ -44,6 +45,22 @@ export const Home = () => {
               {profile.bio}
             </p>
           </GlassCard>
+
+          {/* Social Links */}
+          <div className="flex flex-wrap justify-center gap-4">
+            {profile.socials.map((social) => (
+              <a
+                key={social.name}
+                href={social.url}
+                target="_blank"
+                rel="noreferrer"
+                title={social.name}
+                className="flex items-center justify-center w-12 h-12 rounded-full bg-[#002b3d]/50 border border-white/10 text-[#83b2c8] hover:text-white hover:bg-[#83aaff]/20 hover:border-[#83aaff]/40 transition-all duration-300 group"
+              >
+                <IconResolver icon={social.icon} className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
+              </a>
+            ))}
+          </div>
         </section>
 
       </div>

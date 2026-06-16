@@ -39,4 +39,12 @@ export const profile = {
     { label: 'Skills Learned', value: 12, suffix: '+', icon: 'Zap' },
     { label: 'Projects', value: 3, icon: 'FolderOpen' },
   ],
+
+  // Social Links
+  socials: [
+    { name: 'Portfolio', url: '#', icon: 'Globe' },
+    { name: 'Facebook', url: '#', icon: 'Facebook' },
+    { name: 'Instagram', url: '#', icon: 'Instagram' },
+    { name: 'X', url: '#', icon: 'Twitter' },
+  ],
 }
