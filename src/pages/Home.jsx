@@ -5,9 +5,11 @@ import { StatGrid } from '../components/StatGrid';
 import { GlassCard } from '../components/GlassCard';
 import { profile } from '../data/profile';
 import { useTypingEffect } from '../hooks/useTypingEffect';
+import { usePageTitle } from '../hooks/usePageTitle';
 import { IconResolver } from '../components/IconResolver';
 
 export const Home = () => {
+  usePageTitle('Home');
   const { text } = useTypingEffect(profile.heroGreeting + ' ' + profile.firstName, { speed: 80, loop: true });
 
   return (
@@ -48,7 +50,7 @@ export const Home = () => {
 
           {/* Social Links */}
           <div className="flex flex-wrap justify-center gap-4">
-            {profile.socials.map((social) => (
+            {profile.socials.filter((s) => s.url && s.url !== '#').map((social) => (
               <a
                 key={social.name}
                 href={social.url}

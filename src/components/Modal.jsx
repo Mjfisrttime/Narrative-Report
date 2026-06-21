@@ -14,7 +14,7 @@ export const Modal = ({ isOpen, onClose, children }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-[#001018]/90 backdrop-blur-sm">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-[#001018]/90 backdrop-blur-sm" role="dialog" aria-modal="true" aria-label="Image viewer">
       <div 
         className="absolute inset-0 cursor-pointer" 
         onClick={onClose}

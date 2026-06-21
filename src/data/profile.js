@@ -41,11 +41,11 @@ export const profile = {
     { label: 'Projects', value: 3, icon: 'FolderOpen' },
   ],
 
-  // Social Links
+  // Social Links (remove entries or set url to '' to hide them)
   socials: [
-    { name: 'Portfolio', url: 'https://mistisojudyawon-portfolio.vercel.app/', icon: 'Globe' },
+    { name: 'Portfolio', url: 'https://mistisojudyawon-portfolio.vercel.app/', icon: 'BrandGlobe' },
     { name: 'Facebook', url: 'https://www.facebook.com/mistiso.judyawon.2025/', icon: 'Facebook' },
-    { name: 'Instagram', url: '#', icon: 'Instagram' },
-    { name: 'X', url: '#', icon: 'Twitter' },
+    { name: 'Instagram', url: 'https://www.instagram.com/grave_mj0221/?hl=en', icon: 'Instagram' },
+    { name: 'X', url: '', icon: 'Twitter' },
   ],
 }

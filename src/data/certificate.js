@@ -6,7 +6,7 @@ export const certificate = {
   // Information specific to the certificate rendering
   title: 'Certificate of Completion',
   subtitle: 'This is to certify that',
-  recipient: 'Mistiso A. Judyawon',
+  // recipient name is pulled from profile.js automatically
   description: 'has successfully completed the required hours for the On-the-Job Training program as a requirement for the degree of Bachelor of Science in Computer Science.',
   
   issuedDate: 'June 20, 2025',

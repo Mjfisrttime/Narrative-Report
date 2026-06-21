@@ -5,7 +5,7 @@ const BrandIcons = {
   Facebook: FaFacebook,
   Instagram: FaInstagram,
   Twitter: FaXTwitter,
-  Globe: FaGlobe
+  BrandGlobe: FaGlobe
 };
 
 export const IconResolver = ({ name, ...props }) => {

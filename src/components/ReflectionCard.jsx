@@ -23,7 +23,7 @@ export const ReflectionCard = ({ week, title, date, preview, fullContent, keyTak
       <div className="text-[#c5ebff] text-sm leading-relaxed">
         {expanded ? (
           <div className="space-y-4 animate-in fade-in duration-300">
-            <div dangerouslySetInnerHTML={{ __html: fullContent }} />
+            <p>{fullContent}</p>
             {keyTakeaway && (
               <div className="mt-6 p-4 bg-[#5516be]/20 border border-[#ac8aff]/30 rounded-lg flex items-start gap-3">
                 <IconResolver name="Lightbulb" className="text-[#ac8aff] shrink-0 mt-0.5" size={18} />

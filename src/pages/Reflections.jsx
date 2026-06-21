@@ -4,8 +4,10 @@ import { SectionHeader } from '../components/SectionHeader';
 import { ReflectionCard } from '../components/ReflectionCard';
 import { GlassCard } from '../components/GlassCard';
 import { reflections, overallSummary } from '../data/reflections';
+import { usePageTitle } from '../hooks/usePageTitle';
 
 export const Reflections = () => {
+  usePageTitle('Reflections');
   return (
     <PageTransition>
       <div className="pb-10">
@@ -36,9 +38,9 @@ export const Reflections = () => {
             <div className="sticky top-8">
               <h2 className="text-xl font-bold font-sora text-white mb-6">Overall Summary</h2>
               <GlassCard padding="lg" hover="glow" glowColor="secondary">
-                <div className="prose prose-invert prose-sm">
-                  <div dangerouslySetInnerHTML={{ __html: overallSummary }} />
-                </div>
+                <p className="text-sm text-[#c5ebff] leading-relaxed">
+                  {overallSummary}
+                </p>
               </GlassCard>
             </div>
           </div>

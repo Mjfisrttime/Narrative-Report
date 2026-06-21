@@ -5,8 +5,10 @@ import { StatGrid } from '../components/StatGrid';
 import { GlassCard } from '../components/GlassCard';
 import { profile } from '../data/profile';
 import { certificate } from '../data/certificate';
+import { usePageTitle } from '../hooks/usePageTitle';
 
 export const Certificate = () => {
+  usePageTitle('Certificate');
   return (
     <PageTransition>
       <div className="pb-10">

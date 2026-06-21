@@ -4,8 +4,10 @@ import { SectionHeader } from '../components/SectionHeader';
 import { GlassCard } from '../components/GlassCard';
 import { IconResolver } from '../components/IconResolver';
 import { company } from '../data/company';
+import { usePageTitle } from '../hooks/usePageTitle';
 
 export const AboutCompany = () => {
+  usePageTitle('About Company');
   return (
     <PageTransition>
       <div className="pb-10">

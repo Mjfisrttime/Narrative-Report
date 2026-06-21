@@ -3,6 +3,8 @@ import { NavLink, Outlet, useLocation } from 'react-router';
 import { navItems } from '../config/navigation';
 import { IconResolver } from './IconResolver';
 import { Footer } from './Footer';
+import { ScrollToTop } from './ScrollToTop';
+import { BackToTop } from './BackToTop';
 import { profile } from '../data/profile';
 
 export const Layout = () => {
@@ -16,9 +18,9 @@ export const Layout = () => {
       {/* Mobile Header */}
       <div className="md:hidden fixed top-0 left-0 right-0 h-16 bg-[#001018]/90 backdrop-blur-md border-b border-white/5 z-40 flex items-center justify-between px-4">
         <span className="font-sora font-bold text-white bg-gradient-to-r from-[#53ddfc] to-[#ac8aff] text-transparent bg-clip-text">
-          OJT Report
+          {profile.name}
         </span>
-        <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="text-white p-2">
+        <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="text-white p-2" aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}>
           <IconResolver name={mobileMenuOpen ? 'X' : 'Menu'} size={24} />
         </button>
       </div>
@@ -32,6 +34,7 @@ export const Layout = () => {
               src={profile.avatar || `https://ui-avatars.com/api/?name=${profile.firstName}&background=002b3d&color=53ddfc&size=128`} 
               alt={profile.name}
               className="relative w-full h-full rounded-full object-cover border border-[#53ddfc]/30 shadow-lg"
+              onError={(e) => { e.target.src = `https://ui-avatars.com/api/?name=${profile.firstName}&background=002b3d&color=53ddfc&size=128`; }}
             />
           </div>
           <h1 className="font-sora text-lg font-bold text-[#53ddfc] mb-1">
@@ -44,7 +47,7 @@ export const Layout = () => {
 
         <nav className="flex-1 px-4 space-y-1.5 overflow-y-auto">
           {navItems.map((item) => {
-            const isActive = location.pathname === item.path;
+            const isActive = item.path === '/' ? location.pathname === '/' : location.pathname.startsWith(item.path);
             return (
               <NavLink
                 key={item.path}
@@ -73,9 +76,11 @@ export const Layout = () => {
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#ac8aff]/5 rounded-full blur-[120px] pointer-events-none"></div>
         
         <div className="flex-1 px-4 md:px-12 py-8 md:py-12 max-w-6xl mx-auto w-full relative z-10">
+          <ScrollToTop />
           <Outlet />
           <Footer />
         </div>
+        <BackToTop />
       </main>
 
       {/* Mobile Overlay */}

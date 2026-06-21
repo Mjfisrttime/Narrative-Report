@@ -3,8 +3,10 @@ import { PageTransition } from '../components/PageTransition';
 import { SectionHeader } from '../components/SectionHeader';
 import { TimelineItem } from '../components/TimelineItem';
 import { activityLogs } from '../data/activityLogs';
+import { usePageTitle } from '../hooks/usePageTitle';
 
 export const ActivityLogs = () => {
+  usePageTitle('Activity Logs');
   return (
     <PageTransition>
       <div className="pb-10">

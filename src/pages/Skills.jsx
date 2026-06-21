@@ -5,8 +5,10 @@ import { GlassCard } from '../components/GlassCard';
 import { SkillBar } from '../components/SkillBar';
 import { IconResolver } from '../components/IconResolver';
 import { skillCategories } from '../data/skills';
+import { usePageTitle } from '../hooks/usePageTitle';
 
 export const Skills = () => {
+  usePageTitle('Skills & Competencies');
   return (
     <PageTransition>
       <div className="pb-10">

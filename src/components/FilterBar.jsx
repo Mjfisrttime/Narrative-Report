@@ -7,6 +7,7 @@ export const FilterBar = ({ categories, active, onChange }) => {
         <button
           key={category}
           onClick={() => onChange(category)}
+          aria-pressed={active === category}
           className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
             active === category
               ? 'bg-gradient-to-r from-[#53ddfc] to-[#ac8aff] text-white shadow-[0_0_15px_rgba(83,221,252,0.4)]'
