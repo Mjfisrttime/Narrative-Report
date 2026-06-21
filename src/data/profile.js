@@ -8,6 +8,7 @@ export const profile = {
   // Personal info
   name: 'Mistiso A. Judyawon',
   firstName: 'Mistiso',
+  avatar: '', // Add the path to your image here (e.g., '/my-photo.jpg' placed in the public folder)
   course: 'BSCS',
   courseFullName: 'Bachelor of Science in Computer Science',
   school: 'NEMSU',

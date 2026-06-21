@@ -25,11 +25,21 @@ export const Layout = () => {
 
       {/* Sidebar */}
       <aside className={`fixed inset-y-0 left-0 z-30 w-64 bg-[#001c27]/80 backdrop-blur-xl border-r border-white/10 transform transition-transform duration-300 ease-in-out ${mobileMenuOpen ? 'translate-x-0' : '-translate-x-full'} md:translate-x-0 md:static flex flex-col`}>
-        <div className="p-6 md:p-8 flex-shrink-0">
-          <h1 className="font-sora text-2xl font-bold bg-gradient-to-r from-[#53ddfc] to-[#ac8aff] text-transparent bg-clip-text mb-1">
-            {profile.name.split(' ')[0]}
+        <div className="p-8 flex-shrink-0 flex flex-col items-center justify-center text-center">
+          <div className="relative w-24 h-24 mb-4">
+            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-[#53ddfc] to-[#ac8aff] opacity-30 blur-md"></div>
+            <img 
+              src={profile.avatar || `https://ui-avatars.com/api/?name=${profile.firstName}&background=002b3d&color=53ddfc&size=128`} 
+              alt={profile.name}
+              className="relative w-full h-full rounded-full object-cover border border-[#53ddfc]/30 shadow-lg"
+            />
+          </div>
+          <h1 className="font-sora text-lg font-bold text-[#53ddfc] mb-1">
+            OJT Portfolio
           </h1>
-          <p className="text-xs text-[#83b2c8] uppercase tracking-wider font-medium">{profile.course}</p>
+          <p className="text-xs text-[#83b2c8] tracking-wide">
+            Narrative Report
+          </p>
         </div>
 
         <nav className="flex-1 px-4 space-y-1.5 overflow-y-auto">
@@ -40,10 +50,10 @@ export const Layout = () => {
                 key={item.path}
                 to={item.path}
                 onClick={closeMenu}
-                className={`flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium transition-all duration-300 ${
+                className={`flex items-center gap-4 px-8 py-3.5 text-sm font-medium transition-all duration-300 ${
                   isActive 
-                    ? 'bg-gradient-to-r from-[#53ddfc]/10 to-[#ac8aff]/10 text-white border border-[#53ddfc]/30 shadow-[inset_2px_0_0_#53ddfc]' 
-                    : 'text-[#83b2c8] hover:text-white hover:bg-white/5 border border-transparent'
+                    ? 'bg-[#002b3d]/80 text-[#53ddfc] border-r-2 border-[#53ddfc]' 
+                    : 'text-[#83b2c8] hover:text-[#c5ebff] hover:bg-white/5 border-r-2 border-transparent'
                 }`}
               >
                 <IconResolver name={item.icon} size={18} className={isActive ? 'text-[#53ddfc]' : 'text-[#4c7c90]'} />
@@ -53,17 +63,7 @@ export const Layout = () => {
           })}
         </nav>
 
-        <div className="p-4 border-t border-white/5 mt-auto">
-          <div className="bg-[#001018] rounded-lg p-3 border border-white/5 flex items-center gap-3">
-            <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#53ddfc] to-[#ac8aff] flex items-center justify-center text-white font-bold text-sm">
-              {profile.name.charAt(0)}
-            </div>
-            <div>
-              <p className="text-xs text-white font-medium truncate w-32">{profile.name}</p>
-              <p className="text-[10px] text-[#53ddfc] truncate w-32">{profile.company}</p>
-            </div>
-          </div>
-        </div>
+
       </aside>
 
       {/* Main Content */}
