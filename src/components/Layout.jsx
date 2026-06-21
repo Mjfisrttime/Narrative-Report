@@ -35,7 +35,7 @@ export const Layout = () => {
             />
           </div>
           <h1 className="font-sora text-lg font-bold text-[#53ddfc] mb-1">
-            OJT Portfolio
+            {profile.name}
           </h1>
           <p className="text-xs text-[#83b2c8] tracking-wide">
             Narrative Report
