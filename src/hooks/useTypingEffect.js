@@ -9,9 +9,6 @@ export const useTypingEffect = (text, { speed = 50, delay = 0, loop = false, pau
     let index = 0;
     let isDeleting = false;
 
-    setDisplayedText('');
-    setIsComplete(false);
-
     const type = () => {
       if (!isDeleting) {
         // Typing forward

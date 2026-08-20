@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { PageTransition } from '../components/PageTransition';
 import { SectionHeader } from '../components/SectionHeader';
 import { ReflectionCard } from '../components/ReflectionCard';
