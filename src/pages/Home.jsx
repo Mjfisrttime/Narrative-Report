@@ -1,6 +1,5 @@
-import React from 'react';
+
 import { PageTransition } from '../components/PageTransition';
-import { SectionHeader } from '../components/SectionHeader';
 import { StatGrid } from '../components/StatGrid';
 import { GlassCard } from '../components/GlassCard';
 import { profile } from '../data/profile';

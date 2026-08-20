@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Routes, Route } from 'react-router';
 import { Layout } from './components/Layout';
 import { navItems } from './config/navigation';

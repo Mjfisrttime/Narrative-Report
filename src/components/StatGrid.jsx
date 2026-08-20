@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { StatCard } from './StatCard';
 
 export const StatGrid = ({ stats, columns = 4, className = '' }) => {

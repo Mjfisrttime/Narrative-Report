@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 export const FilterBar = ({ categories, active, onChange }) => {
   return (

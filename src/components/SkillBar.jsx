@@ -1,6 +1,6 @@
-import React from 'react';
 
-export const SkillBar = ({ name, proficiency, variant = 'bar', description }) => {
+
+export const SkillBar = ({ name, proficiency, description }) => {
   return (
     <div className="mb-4">
       <div className="flex justify-between items-end mb-2">

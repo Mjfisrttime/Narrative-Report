@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 export const GradientText = ({ as: Component = 'span', className = '', gradient = 'primary-to-secondary', children, ...props }) => {
   let gradientClasses = 'bg-gradient-to-r from-[#53ddfc] to-[#ac8aff]';

@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { GradientText } from './GradientText';
 
 export const SectionHeader = ({ title, subtitle, gradient = 'primary-to-secondary', className = '' }) => {

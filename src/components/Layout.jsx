@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { NavLink, Outlet, useLocation } from 'react-router';
 import { navItems } from '../config/navigation';
 import { IconResolver } from './IconResolver';
