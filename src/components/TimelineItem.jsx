@@ -2,7 +2,7 @@ import React from 'react';
 import { GlassCard } from './GlassCard';
 import { IconResolver } from './IconResolver';
 
-export const TimelineItem = ({ week, dateRange, tasks, learnings, icon, position = 'left' }) => {
+export const TimelineItem = ({ week, dateRange, schedule, tasks, learnings, icon, position = 'left' }) => {
   const isLeft = position === 'left';
   
   return (
@@ -22,7 +22,14 @@ export const TimelineItem = ({ week, dateRange, tasks, learnings, icon, position
       <div className="w-full md:w-5/12 ml-16 md:ml-0">
         <GlassCard hover="glow" padding="lg">
           <div className="flex flex-col sm:flex-row justify-between sm:items-center mb-6 gap-2">
-            <h3 className="text-xl font-bold font-sora text-white">Week {week}</h3>
+            <div className="flex items-center gap-2.5">
+              <h3 className="text-xl font-bold font-sora text-white">Week {week}</h3>
+              {schedule && (
+                <span className="text-[11px] font-semibold text-[#83aaff] bg-[#002b3d] border border-[#53ddfc]/20 px-2.5 py-0.5 rounded-full">
+                  {schedule}
+                </span>
+              )}
+            </div>
             <span className="text-xs font-semibold text-[#53ddfc] bg-[#21bedc]/10 border border-[#53ddfc]/30 px-3 py-1.5 rounded-full w-max">{dateRange}</span>
           </div>
           

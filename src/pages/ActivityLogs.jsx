@@ -23,6 +23,7 @@ export const ActivityLogs = () => {
               key={log.week}
               week={log.week}
               dateRange={log.dateRange}
+              schedule={log.schedule}
               tasks={log.tasks}
               learnings={log.learnings}
               icon={log.icon}
