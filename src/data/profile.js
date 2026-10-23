@@ -28,10 +28,10 @@ export const profile = {
   heroTagline: 'BSCS | NEMSU | Soarhigh Digital OJT',
   heroGreeting: "Hi, I'm",
   heroDescription:
-    'A passionate Computer Science student from North Eastern Mindanao State University, documenting my 324-hour On-the-Job Training journey at SOARHIGH DIGITAL MARKETING SOLUTION — gaining practical experience in Web Design, Landing Page Development, and Digital Content Creation.',
+    'A passionate Computer Science student from North Eastern Mindanao State University, documenting my 324-hour On-the-Job Training journey at SOARHIGH DIGITAL MARKETING SOLUTION — building conversion-driven Shopify landing pages, editing dynamic video content with CapCut, and managing team tasks on Lark.',
 
   // Bio used in About / Home
-  bio: 'A passionate Computer Science student with a strong drive for web development, video editing, and modern digital workflows. Successfully completed 324 hours of On-the-Job Training (June 29 – August 15, 2026) at SOARHIGH DIGITAL MARKETING SOLUTION, gaining hands-on expertise in responsive landing page engineering, video editing, and digital media production.',
+  bio: 'A passionate Computer Science student with practical expertise in e-commerce web design, multimedia production, and agile operations. Successfully completed 324 hours of On-the-Job Training (June 29 – August 15, 2026) at SOARHIGH DIGITAL MARKETING SOLUTION, delivering 40+ client deliverables including high-converting Shopify landing pages, engaging CapCut video reels, and workflow tracking via Lark.',
 
   // Stats displayed on Home page and reused elsewhere
   stats: [

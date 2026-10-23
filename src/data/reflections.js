@@ -2,41 +2,42 @@
 // REFLECTIONS DATA
 // Weekly insights and the overall summary.
 // Timeline: June 29, 2026 – August 15, 2026 (7 Weeks, 324 Hours)
+// Core Tools: Shopify, CapCut, Lark
 // ============================================
 
-export const overallSummary = "My On-the-Job Training from June 29 to August 15, 2026 at a Virtual Assistant company has been an enriching and transformative journey. It bridged the gap between academic computer science theory and real-world digital client deliverables. Throughout my 324 hours, I gained deep practical expertise in high-converting landing page development, dynamic video editing, and agile remote workflows. This experience honed both my creative design sense and technical discipline, preparing me for a versatile career in the modern digital workspace."
+export const overallSummary = "My On-the-Job Training from June 29 to August 15, 2026 at SOARHIGH DIGITAL MARKETING SOLUTION has been a transformative experience. Over 324 hours, I gained deep practical expertise building high-converting landing pages on Shopify, editing viral short-form video reels exclusively using CapCut, and orchestrating daily deliverables through Lark. This hands-on training bridged academic computer science with real-world e-commerce marketing, equipping me with the skills, agility, and professional discipline to thrive in the modern tech and digital agency industry."
 
 export const reflections = [
   {
     week: 1,
-    title: 'Stepping into the Remote Workspace',
+    title: 'Onboarding & Task Orchestration in Lark',
     date: 'July 3, 2026',
-    preview: 'Transitioning from classroom assignments to professional virtual assistance required a fast mindset shift...',
-    fullContent: 'The first week was all about adapting to a fast-paced virtual assistant workflow. Working remotely taught me the critical importance of clear asynchronous communication, rigorous time tracking, and organized task delegation. Getting familiar with client onboarding checklists, project boards, and digital SOPs established a solid foundation for the weeks ahead.',
-    keyTakeaway: 'In remote virtual assistance, proactive communication and clear documentation are the backbone of trust and efficiency.',
+    preview: 'Stepping into SOARHIGH DIGITAL MARKETING SOLUTION: mastering Lark for task management and team workflows...',
+    fullContent: 'My first week at Soarhigh introduced me to real digital agency operations. Utilizing Lark Tasks and Lark Base completely reshaped my approach to daily task management. Instead of fragmented communication, every project deliverable is clearly logged, assigned, and tracked to completion. Getting acquainted with company SOPs for Shopify store assets and CapCut video guidelines established a strong foundation.',
+    keyTakeaway: 'Organized task management in Lark ensures accountability, clear expectations, and timely project delivery.',
   },
   {
     week: 2,
-    title: 'The Art & Precision of Video Editing',
+    title: 'CapCut Video Editing Precision',
     date: 'July 10, 2026',
-    preview: 'Working on real client video footage taught me that great editing is invisible...',
-    fullContent: 'Diving into video editing on professional client deliverables was an eye-opener. I learned that video editing is far more than just splicing clips together; it involves audio balance, rhythm, visual pacing, and strategic cuts that keep viewers engaged. Cleaning up background noise and mastering keyboard shortcuts drastically reduced my editing turnaround time.',
-    keyTakeaway: 'Clean audio, thoughtful pacing, and sharp timeline organization define the quality of professional video editing.',
+    preview: 'Using CapCut exclusively to transform raw footage into polished, engaging video edits...',
+    fullContent: 'Working in CapCut on client deliverables showed me that compelling video storytelling begins long before complex effects are added. I focused on timeline trimming, jump cuts that eliminate dead air, and CapCut’s audio noise reduction tools. Balancing spoken dialogue with subtle background tracks elevated our production quality noticeably.',
+    keyTakeaway: 'Thoughtful pacing and clean audio in CapCut define professional video quality far more than flashy transitions.',
   },
   {
     week: 3,
-    title: 'Short-Form Content & Visual Retention',
+    title: 'Viral Short-Form Reels & Auto-Captions',
     date: 'July 17, 2026',
-    preview: 'Creating vertical reels for social platforms required analyzing viewer psychology...',
-    fullContent: 'This week challenged me to produce high-impact vertical reels. The goal was to hook viewers in the first 3 seconds using punchy visuals, kinetic text, and on-point sound effects. Synchronizing animations with speech rhythm helped me realize how subtle creative choices directly influence viewer retention and social media conversion.',
-    keyTakeaway: 'Visual hooks, precise captions, and energetic pacing turn ordinary footage into captivating social content.',
+    preview: 'Creating high-retention 9:16 vertical reels in CapCut with animated subtitles and sound effects...',
+    fullContent: 'Short-form vertical video is essential for digital marketing. In CapCut, I generated and styled dynamic animated auto-captions with custom brand highlights. Synchronizing keyframe zooms and sound effects to key speech moments created energetic reels that capture attention within the critical 3-second hook window.',
+    keyTakeaway: 'Dynamic auto-captions, visual keyframe hooks, and punchy sound design in CapCut turn casual viewers into engaged audiences.',
   },
   {
     week: 4,
-    title: 'Architecting High-Converting Landing Pages',
+    title: 'Designing High-Converting Shopify Landing Pages',
     date: 'July 24, 2026',
-    preview: 'A landing page is more than visual aesthetics; it is an intentional user journey...',
-    fullContent: 'Moving into landing page design allowed me to synthesize my computer science background with digital marketing principles. Designing responsive layouts, optimizing hero sections, and strategically placing call-to-action buttons taught me that web design must always serve user intent. Testing responsive behaviors across different screens reinforced the value of clean CSS architecture.',
-    keyTakeaway: 'Effective landing page design is where clean web code meets compelling visual storytelling and conversion optimization.',
+    preview: 'Translating UI/UX wireframes into conversion-focused landing pages on Shopify...',
+    fullContent: 'Moving into Shopify landing page architecture allowed me to combine my Computer Science background with conversion rate optimization (CRO). Structuring product hero sections, social proof galleries, and strategic Add-to-Cart callout buttons taught me that web design must always serve consumer intent.',
+    keyTakeaway: 'High-converting Shopify landing pages are built on clear visual hierarchy, frictionless navigation, and trust-building social proof.',
   },
 ]

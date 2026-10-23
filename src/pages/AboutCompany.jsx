@@ -21,12 +21,16 @@ export const AboutCompany = () => {
           <div className="lg:col-span-2 space-y-8">
             <GlassCard padding="xl" hover="glow">
               <div className="flex items-center gap-4 mb-6">
-                <div className="bg-[#21bedc]/20 p-3 rounded-xl text-[#53ddfc] border border-[#21bedc]/30">
-                  <IconResolver name={company.icon || 'MonitorPlay'} size={40} />
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#ffb703]/20 to-[#fb8500]/10 p-2.5 border border-[#ffb703]/30 shadow-lg shadow-[#ffb703]/10 flex items-center justify-center shrink-0">
+                  <img 
+                    src={company.logo || '/soarhigh-logo.png'} 
+                    alt={company.name} 
+                    className="w-full h-full object-contain drop-shadow"
+                  />
                 </div>
                 <div>
-                  <h2 className="text-3xl font-bold font-sora text-white">{company.name}</h2>
-                  <p className="text-[#53ddfc] font-medium">{company.tagline}</p>
+                  <h2 className="text-2xl sm:text-3xl font-bold font-sora text-white">{company.name}</h2>
+                  <p className="text-[#53ddfc] font-medium text-sm sm:text-base">{company.tagline}</p>
                 </div>
               </div>
               

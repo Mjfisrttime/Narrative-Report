@@ -6,26 +6,27 @@
 export const company = {
   name: 'SOARHIGH DIGITAL MARKETING SOLUTION',
   tagline: 'Web Design, Landing Page Development & Digital Content Creation',
+  logo: '/soarhigh-logo.png',
   icon: 'MonitorPlay',
   founded: '2021',
   hq: 'Prk. Avocado Maroon, Purisima, Tago, Surigao del Sur',
   industry: 'Web Design, Landing Page Engineering & Digital Content Creation',
   ceo: 'John Ryan M. Medrano',
   
-  overview: "SOARHIGH DIGITAL MARKETING SOLUTION is a dynamic digital agency based in Tago, Surigao del Sur. The company specializes in modern Web Design, high-converting Landing Page Development, and Digital Content Creation. Through creative media production, responsive web engineering, and tailored marketing campaigns, Soarhigh empowers businesses, brands, and content creators to establish a strong and impactful online presence.",
+  overview: "SOARHIGH DIGITAL MARKETING SOLUTION is a dynamic digital agency based in Tago, Surigao del Sur. The agency specializes in building high-converting landing pages primarily using Shopify, producing captivating short-form and promotional video content exclusively using CapCut, and orchestrating agile team workflows and task tracking via Lark. Soarhigh empowers businesses, brands, and e-commerce clients to scale their digital visibility and conversions.",
   
-  mission: 'To deliver cutting-edge web design, conversion-driven landing pages, and engaging digital media that elevate businesses and creators.',
-  vision: 'To be a premier digital agency recognized for technical craftsmanship, innovative design solutions, and client excellence.',
+  mission: 'To deliver high-impact Shopify landing pages, dynamic CapCut video edits, and seamless digital task execution that elevate our clients.',
+  vision: 'To be a premier digital solutions agency recognized for creative media excellence, conversion-driven web design, and disciplined remote operations.',
   
   values: [
-    { title: 'Technical Skill & Creativity', icon: 'Award', description: 'Merging technical coding expertise with modern visual storytelling to build compelling web solutions.' },
-    { title: 'Attention to Detail', icon: 'CheckCircle2', description: 'Ensuring pixel-perfect responsive layouts, clean audio and video sync, and flawless digital deliverables.' },
-    { title: 'Dedication & Professionalism', icon: 'Shield', description: 'Maintaining the highest ethical and professional standards in every client collaboration.' },
-    { title: 'Continuous Growth', icon: 'Sparkles', description: 'Continuously refining skills in web development, video editing, and digital marketing technologies.' },
+    { title: 'Technical Skill & Creativity', icon: 'Award', description: 'Crafting conversion-optimized Shopify landing pages and viral CapCut video edits with artistic flair.' },
+    { title: 'Attention to Detail', icon: 'CheckCircle2', description: 'Ensuring pixel-perfect responsive layouts, clean audio and subtitle sync, and flawless task completion.' },
+    { title: 'Workflow Accountability', icon: 'Shield', description: 'Maintaining punctual task updates, transparency, and organized project delivery in Lark.' },
+    { title: 'Continuous Growth', icon: 'Sparkles', description: 'Continuously refining practical skills in e-commerce web design, video storytelling, and digital marketing.' },
   ],
   
   department: { 
     name: 'Web Design & Digital Media Team', 
-    description: 'Responsible for end-to-end landing page architecture, mobile-responsive development, UI/UX optimization, professional video production, and social media digital content creation.' 
+    description: 'Specializes in designing responsive Shopify landing pages, editing high-retention video content with CapCut, and managing collaborative client pipelines and task milestones on Lark.' 
   },
 }
