@@ -8,6 +8,7 @@ import { ActivityLogs } from './pages/ActivityLogs';
 import { Skills } from './pages/Skills';
 import { Gallery } from './pages/Gallery';
 import { Reflections } from './pages/Reflections';
+import { Blog } from './pages/Blog';
 import { AboutCompany } from './pages/AboutCompany';
 import { Certificate } from './pages/Certificate';
 
@@ -17,6 +18,7 @@ const pageComponents = {
   Skills,
   Gallery,
   Reflections,
+  Blog,
   AboutCompany,
   Certificate
 };
@@ -35,6 +37,9 @@ const App = () => {
             />
           );
         })}
+        {/* Alias routes */}
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/reflections" element={<Blog />} />
         <Route path="*" element={
           <div className="text-white text-center p-20">
             <h2 className="text-4xl font-bold text-[#ff716c] font-sora mb-4">404</h2>

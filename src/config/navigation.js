@@ -32,10 +32,10 @@ export const navItems = [
     pageKey: 'Gallery',
   },
   {
-    path: '/reflections',
-    label: 'Reflections',
-    icon: 'MessageSquare',
-    pageKey: 'Reflections',
+    path: '/blog',
+    label: 'Blog & Journal',
+    icon: 'BookOpen',
+    pageKey: 'Blog',
   },
   {
     path: '/about-company',
