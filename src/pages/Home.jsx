@@ -15,7 +15,7 @@ export const Home = () => {
   return (
     <PageTransition>
       <div className="flex flex-col gap-12 pb-10">
-        
+
         {/* Hero Section */}
         <section className="text-center pt-8 md:pt-16 pb-8">
           <p className="text-[#83aaff] uppercase tracking-widest font-bold text-sm md:text-base mb-4">
@@ -39,7 +39,7 @@ export const Home = () => {
           <GlassCard padding="xl" hover="glow" glowColor="secondary">
             <h2 className="text-2xl font-bold font-sora text-white mb-4 flex items-center gap-3">
               <span className="w-8 h-8 rounded-full bg-[#ac8aff]/20 flex items-center justify-center text-[#ac8aff]">
-                👋
+                <IconResolver name="User" size={16} />
               </span>
               About Me
             </h2>

@@ -1,12 +1,13 @@
 // ============================================
 // ACTIVITY LOGS DATA
-// Add a new week by copying an object and changing the values.
+// Timeline: June 29, 2026 – August 15, 2026 (7 Weeks, 324 Hours)
 // Pages render these dynamically with .map() — no code changes needed.
 // ============================================
+
 export const activityLogs = [
   {
     week: 1,
-    dateRange: 'March 3–7, 2025',
+    dateRange: 'June 29 – July 3, 2026',
     title: 'Orientation & Virtual Assistant Onboarding',
     tasks: [
       'Attended agency orientation and virtual team meet-and-greet',
@@ -23,7 +24,7 @@ export const activityLogs = [
   },
   {
     week: 2,
-    dateRange: 'March 10–14, 2025',
+    dateRange: 'July 6 – 10, 2026',
     title: 'Video Editing Fundamentals & Assembly',
     tasks: [
       'Reviewed raw video footage, audio sync, and clip selection standards',
@@ -40,7 +41,7 @@ export const activityLogs = [
   },
   {
     week: 3,
-    dateRange: 'March 17–21, 2025',
+    dateRange: 'July 13 – 17, 2026',
     title: 'Short-Form Video Production & Social Reels',
     tasks: [
       'Created vertical video reels (9:16) for Instagram and TikTok campaigns',
@@ -57,7 +58,7 @@ export const activityLogs = [
   },
   {
     week: 4,
-    dateRange: 'March 24–28, 2025',
+    dateRange: 'July 20 – 24, 2026',
     title: 'Landing Page Principles & Wireframing',
     tasks: [
       'Researched high-converting landing page layouts and design patterns',
@@ -74,7 +75,7 @@ export const activityLogs = [
   },
   {
     week: 5,
-    dateRange: 'March 31 – April 4, 2025',
+    dateRange: 'July 27 – 31, 2026',
     title: 'Landing Page Development & Responsiveness',
     tasks: [
       'Built interactive, responsive landing pages using modern HTML, CSS, and web tools',
@@ -91,7 +92,7 @@ export const activityLogs = [
   },
   {
     week: 6,
-    dateRange: 'April 7–11, 2025',
+    dateRange: 'August 3 – 7, 2026',
     title: 'Visual Assets & Branding Design',
     tasks: [
       'Designed custom video thumbnails and high-CTR cover graphics',
@@ -108,41 +109,23 @@ export const activityLogs = [
   },
   {
     week: 7,
-    dateRange: 'April 14–18, 2025',
-    title: 'Quality Assurance, Testing & Client Revisions',
+    dateRange: 'August 10 – 15, 2026',
+    title: 'Quality Assurance, Final Deliverables & OJT Completion',
     tasks: [
       'Audited landing page loading performance and asset compression',
       'Processed client feedback notes and revised video cuts accordingly',
-      'Conducted link verification, cross-browser compatibility, and accessibility checks',
-      'Updated task boards and delivered weekly client milestone reports',
+      'Organized and archived all client landing pages, video exports, and raw project files',
+      'Presented final portfolio review of 40+ completed tasks to the supervisor',
+      'Finalized OJT documentation, verified 324 total hours, and concluded internship on August 15, 2026',
     ],
     learnings: [
       'Learned how to efficiently parse client feedback into actionable edit requests',
-      'Understood web performance optimization techniques (image formats, lazy loading)',
-      'Developed strong professional accountability in remote client deliverables',
-    ],
-    icon: 'CheckSquare',
-  },
-  {
-    week: 8,
-    dateRange: 'April 21–25, 2025',
-    title: 'Final Deliverables, Handover & OJT Completion',
-    tasks: [
-      'Organized and archived all client landing pages, video exports, and raw project files',
-      'Created comprehensive documentation and handover guide for client assets',
-      'Presented final portfolio review of 40+ completed tasks to the supervisor',
-      'Finalized OJT documentation, verified 324 total hours, and concluded internship',
-    ],
-    learnings: [
       'Mastered digital asset management and project handover best practices',
       'Reflected on technical and personal growth as a versatile remote professional',
       'Built confidence in delivering end-to-end web and media solutions independently',
     ],
     icon: 'Award',
   },
-  // ============================================
-  // ADD MORE WEEKS BELOW — just copy the object template above
-  // ============================================
 ]
 
 // Summary stats for the Activity Logs page header

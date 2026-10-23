@@ -200,7 +200,7 @@ export const Blog = () => {
                 <IconResolver name="Award" size={24} className="text-[#53ddfc]" />
                 <div>
                   <p className="text-xs text-[#83b2c8]">Total Hours Completed</p>
-                  <p className="text-sm font-bold text-white">324 Hours (8 Weeks)</p>
+                  <p className="text-sm font-bold text-white">324 Hours (7 Weeks)</p>
                 </div>
               </div>
             </div>
