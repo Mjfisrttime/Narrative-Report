@@ -3,6 +3,7 @@ import { PageTransition } from '../components/PageTransition';
 import { SectionHeader } from '../components/SectionHeader';
 import { TimelineItem } from '../components/TimelineItem';
 import { activityLogs } from '../data/activityLogs';
+import { profile } from '../data/profile';
 import { usePageTitle } from '../hooks/usePageTitle';
 
 export const ActivityLogs = () => {
@@ -12,7 +13,7 @@ export const ActivityLogs = () => {
       <div className="pb-10">
         <SectionHeader 
           title="Activity Logs" 
-          subtitle="My Journey at Salesforce"
+          subtitle={`My Journey at ${profile.company}`}
           gradient="primary-to-secondary"
         />
         

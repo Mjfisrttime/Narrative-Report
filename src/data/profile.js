@@ -15,30 +15,30 @@ export const profile = {
   schoolFullName: 'North Eastern Mindanao State University',
 
   // OJT info
-  company: 'Salesforce',
-  companyTagline: "The World's #1 CRM Platform",
-  duration: 'March – June 2025',
-  totalHours: '600+',
-  role: 'OJT Intern',
+  company: 'Virtual Assistant Solutions',
+  companyTagline: 'Professional Remote Assistance & Digital Media Services',
+  duration: 'March – April 2025',
+  totalHours: '324 Hours',
+  role: 'Virtual Assistant & Multimedia Intern',
   supervisor: '[Supervisor TBD]',
   coordinator: '[OJT Coordinator TBD]',
-  department: '[Department TBD]',
+  department: 'Creative Media & Web Solutions',
 
   // Hero section content
-  heroTagline: 'BSCS | NEMSU | Salesforce OJT',
+  heroTagline: 'BSCS | NEMSU | Virtual Assistant OJT',
   heroGreeting: "Hi, I'm",
   heroDescription:
-    'A passionate Computer Science student from North Eastern Mindanao State University, documenting my On-the-Job Training journey with Salesforce — gaining hands-on experience in cloud computing, CRM administration, and enterprise software development.',
+    'A passionate Computer Science student from North Eastern Mindanao State University, documenting my 324-hour On-the-Job Training journey in virtual assistance — gaining hands-on industry experience in landing page design, video editing, client support, and digital productivity solutions.',
 
   // Bio used in About / Home
-  bio: 'A passionate Computer Science student with a keen interest in software development, cloud technologies, and problem-solving. Currently completing my OJT at Salesforce, where I am gaining invaluable real-world experience in enterprise-level software and CRM solutions.',
+  bio: 'A passionate Computer Science student with a strong drive for web development, video editing, and modern digital workflows. Completed my 324-hour OJT at a Virtual Assistant company, delivering 40+ client tasks including responsive landing page development, engaging video content creation, and remote operational support.',
 
   // Stats displayed on Home page and reused elsewhere
   stats: [
-    { label: 'Total Hours', value: 600, suffix: '+', icon: 'Clock' },
-    { label: 'Weeks Completed', value: 15, icon: 'Calendar' },
-    { label: 'Skills Learned', value: 12, suffix: '+', icon: 'Zap' },
-    { label: 'Projects', value: 3, icon: 'FolderOpen' },
+    { label: 'Total Hours', value: 324, icon: 'Clock' },
+    { label: 'Weeks Completed', value: 8, icon: 'Calendar' },
+    { label: 'Skills Learned', value: 5, icon: 'Zap' },
+    { label: 'Tasks Finished', value: 40, suffix: '+', icon: 'CheckCircle' },
   ],
 
   // Social Links (remove entries or set url to '' to hide them)

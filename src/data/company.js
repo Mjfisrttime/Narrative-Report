@@ -4,27 +4,28 @@
 // ============================================
 
 export const company = {
-  name: 'Salesforce',
-  tagline: "The World's #1 CRM Platform",
-  logo: 'https://upload.wikimedia.org/wikipedia/commons/f/f9/Salesforce.com_logo.svg', // Placeholder logo
-  founded: '1999',
-  hq: 'San Francisco, California, USA',
-  industry: 'Cloud Computing, CRM, Enterprise Software',
+  name: 'Virtual Assistant Solutions',
+  tagline: 'Professional Remote Assistance & Digital Media Services',
+  icon: 'MonitorPlay',
+  founded: '2020',
+  hq: 'Remote / Global Support Agency',
+  industry: 'Virtual Assistance, Web Design & Video Production',
   
-  overview: "Salesforce is an American cloud-based software company headquartered in San Francisco, California. It provides customer relationship management (CRM) software and applications focused on sales, customer service, marketing automation, e-commerce, analytics, and application development. As a pioneer of the SaaS (Software as a Service) model, Salesforce has revolutionized how businesses connect with their customers.",
+  overview: "Virtual Assistant Solutions is a modern remote services agency dedicated to helping entrepreneurs, businesses, and content creators streamline their operations. The company delivers comprehensive administrative support, high-converting landing page design, professional video editing, and digital marketing services to clients across the globe.",
   
-  mission: 'To empower companies to connect with their customers in a whole new way.',
-  vision: 'To bring companies and customers together through Customer 360.',
+  mission: 'To empower businesses and creators with seamless virtual assistance, dynamic landing pages, and captivating multimedia content.',
+  vision: 'To be a premier remote digital agency recognized for excellence in virtual support, creative media, and web solutions.',
   
   values: [
-    { title: 'Trust', icon: 'Shield', description: 'Trust is our #1 value. We deliver on our commitments and prioritize data security and privacy.' },
-    { title: 'Customer Success', icon: 'Trophy', description: 'When our customers succeed, we succeed. We are dedicated to delivering continuous innovation.' },
-    { title: 'Innovation', icon: 'Lightbulb', description: 'We innovate together. We deliver three major platform releases a year to keep our customers ahead.' },
-    { title: 'Equality', icon: 'Heart', description: 'We believe everyone should be seen, heard, valued, and empowered to succeed.' },
+    { title: 'Quality & Craftsmanship', icon: 'Award', description: 'Delivering polished video edits, clean landing page layouts, and detail-oriented virtual support.' },
+    { title: 'Client Dedication', icon: 'Users', description: 'Understanding client visions and exceeding expectations with reliable, agile service.' },
+    { title: 'Creative Innovation', icon: 'Sparkles', description: 'Leveraging modern design trends and cutting-edge media tools for maximum visual impact.' },
+    { title: 'Integrity & Timeliness', icon: 'Clock', description: 'Maintaining strict confidentiality, transparent communication, and consistent on-time delivery.' },
   ],
   
   department: { 
-    name: 'Solution Engineering / Development', 
-    description: 'The development team is responsible for customizing the Salesforce platform to meet specific client needs, building integrations, and developing custom Lightning Web Components and Apex triggers to extend the core platform capabilities.' 
+    name: 'Creative Media & Web Solutions', 
+    description: 'Specializes in crafting responsive, conversion-focused landing pages, producing polished video content for marketing and social channels, and managing day-to-day administrative and technical operations for international clients.' 
   },
 }
+

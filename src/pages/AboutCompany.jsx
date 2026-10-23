@@ -21,9 +21,8 @@ export const AboutCompany = () => {
           <div className="lg:col-span-2 space-y-8">
             <GlassCard padding="xl" hover="glow">
               <div className="flex items-center gap-4 mb-6">
-                <div className="bg-white p-3 rounded-xl">
-                  {/* Placeholder for company logo */}
-                  <IconResolver name="Cloud" className="text-[#00a1e0]" size={40} />
+                <div className="bg-[#21bedc]/20 p-3 rounded-xl text-[#53ddfc] border border-[#21bedc]/30">
+                  <IconResolver name={company.icon || 'MonitorPlay'} size={40} />
                 </div>
                 <div>
                   <h2 className="text-3xl font-bold font-sora text-white">{company.name}</h2>

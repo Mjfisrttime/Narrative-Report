@@ -14,8 +14,8 @@ export const certificate = {
   signatories: [
     {
       name: '[Supervisor Name]',
-      title: 'OJT Supervisor',
-      company: 'Salesforce'
+      title: 'OJT Supervisor / Creative Lead',
+      company: 'Virtual Assistant Solutions'
     },
     {
       name: '[Coordinator Name]',
@@ -26,9 +26,9 @@ export const certificate = {
 
   // Extra stats specifically highlighted on the certificate page
   achievements: [
-    { label: 'Total Hours', value: 600, suffix: '+', icon: 'Clock' },
-    { label: 'Skills Acquired', value: 12, suffix: '+', icon: 'Brain' },
-    { label: 'Projects Completed', value: 3, icon: 'Rocket' },
-    { label: 'Trailhead Badges', value: 45, icon: 'Award' },
+    { label: 'Total Hours', value: 324, icon: 'Clock' },
+    { label: 'Skills Acquired', value: 5, icon: 'Brain' },
+    { label: 'Tasks Finished', value: 40, suffix: '+', icon: 'CheckCircle' },
+    { label: 'Web & Video Assets', value: 25, suffix: '+', icon: 'Video' },
   ],
 }

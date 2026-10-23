@@ -3,39 +3,40 @@
 // Weekly insights and the overall summary.
 // ============================================
 
-export const overallSummary = "My On-the-Job Training at Salesforce has been a transformative experience. It bridged the gap between academic theories and industry practices. I've gained a profound understanding of cloud computing, CRM architecture, and agile development methodologies. This experience has solidified my passion for software engineering and equipped me with the technical and soft skills necessary for my future career."
+export const overallSummary = "My On-the-Job Training at a Virtual Assistant company has been an enriching and transformative journey. It bridged the gap between academic computer science theory and real-world digital client deliverables. Throughout my 324 hours, I gained deep practical expertise in high-converting landing page development, dynamic video editing, and agile remote workflows. This experience honed both my creative design sense and technical discipline, preparing me for a versatile career in the modern digital workspace."
 
 export const reflections = [
   {
     week: 1,
-    title: 'Embracing the Learning Curve',
+    title: 'Stepping into the Remote Workspace',
     date: 'March 7, 2025',
-    preview: 'The first week was overwhelming but exciting. Navigating a massive platform like Salesforce requires patience...',
-    fullContent: 'The first week was overwhelming but exciting. Navigating a massive platform like Salesforce requires patience. I spent most of my time understanding the architecture and how different clouds (Sales, Service, Marketing) interact. Trailhead proved to be an invaluable resource. The biggest challenge was adjusting to the sheer scale of enterprise software compared to university projects.',
-    keyTakeaway: 'In enterprise environments, understanding the big picture architecture is just as important as writing code.',
+    preview: 'Transitioning from classroom assignments to professional virtual assistance required a fast mindset shift...',
+    fullContent: 'The first week was all about adapting to a fast-paced virtual assistant workflow. Working remotely taught me the critical importance of clear asynchronous communication, rigorous time tracking, and organized task delegation. Getting familiar with client onboarding checklists, project boards, and digital SOPs established a solid foundation for the weeks ahead.',
+    keyTakeaway: 'In remote virtual assistance, proactive communication and clear documentation are the backbone of trust and efficiency.',
   },
   {
     week: 2,
-    title: 'The Power of Declarative Programming',
+    title: 'The Art & Precision of Video Editing',
     date: 'March 14, 2025',
-    preview: 'Before this week, I thought real development meant writing code. Discovering what can be done with point-and-click tools...',
-    fullContent: 'Before this week, I thought real development meant writing code. Discovering what can be done with point-and-click tools (declarative programming) in Salesforce completely shifted my perspective. Creating complex data models and UI layouts without writing a single line of code taught me that the best solution is often the most maintainable one, not necessarily the most technically complex.',
-    keyTakeaway: 'Always choose configuration over customization when possible to reduce technical debt.',
+    preview: 'Working on real client video footage taught me that great editing is invisible...',
+    fullContent: 'Diving into video editing on professional client deliverables was an eye-opener. I learned that video editing is far more than just splicing clips together; it involves audio balance, rhythm, visual pacing, and strategic cuts that keep viewers engaged. Cleaning up background noise and mastering keyboard shortcuts drastically reduced my editing turnaround time.',
+    keyTakeaway: 'Clean audio, thoughtful pacing, and sharp timeline organization define the quality of professional video editing.',
   },
   {
     week: 3,
-    title: 'Automating Business Logic',
+    title: 'Short-Form Content & Visual Retention',
     date: 'March 21, 2025',
-    preview: 'Diving into Flow Builder was a highlight. Seeing how visual tools can orchestrate complex background processes...',
-    fullContent: 'Diving into Flow Builder was a highlight. Seeing how visual tools can orchestrate complex background processes made me appreciate visual programming. I struggled initially with understanding context (before-save vs after-save), but building a few automated email alerts and record updates solidified my understanding of triggers and automation sequencing.',
-    keyTakeaway: 'Visual automation tools require the same logical rigor as traditional programming.',
+    preview: 'Creating vertical reels for social platforms required analyzing viewer psychology...',
+    fullContent: 'This week challenged me to produce high-impact vertical reels. The goal was to hook viewers in the first 3 seconds using punchy visuals, kinetic text, and on-point sound effects. Synchronizing animations with speech rhythm helped me realize how subtle creative choices directly influence viewer retention and social media conversion.',
+    keyTakeaway: 'Visual hooks, precise captions, and energetic pacing turn ordinary footage into captivating social content.',
   },
   {
     week: 4,
-    title: 'Transitioning to Apex',
+    title: 'Architecting High-Converting Landing Pages',
     date: 'March 28, 2025',
-    preview: 'Returning to code with Apex felt familiar but came with new rules. Governor limits forced me to think differently...',
-    fullContent: 'Returning to code with Apex felt familiar but came with new rules. Governor limits forced me to think differently about resource allocation. In university, memory and CPU limits rarely mattered for small assignments. In a multi-tenant cloud environment, writing bulkified, efficient code isn\'t just a best practice—it\'s mandatory. I learned to keep SOQL queries out of loops the hard way.',
-    keyTakeaway: 'Multi-tenant architecture demands highly optimized and resource-conscious programming.',
+    preview: 'A landing page is more than visual aesthetics; it is an intentional user journey...',
+    fullContent: 'Moving into landing page design allowed me to synthesize my computer science background with digital marketing principles. Designing responsive layouts, optimizing hero sections, and strategically placing call-to-action buttons taught me that web design must always serve user intent. Testing responsive behaviors across different screens reinforced the value of clean CSS architecture.',
+    keyTakeaway: 'Effective landing page design is where clean web code meets compelling visual storytelling and conversion optimization.',
   },
 ]
+
