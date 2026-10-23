@@ -26,11 +26,11 @@ export const reflections = [
   },
   {
     week: 3,
-    title: 'Viral Short-Form Reels & Auto-Captions',
+    title: 'Shopify Landing Page Development & Layouts',
     date: 'July 18, 2026',
-    preview: 'Creating high-retention 9:16 vertical reels in CapCut with animated subtitles and sound effects...',
-    fullContent: 'Short-form vertical video is essential for digital marketing. In CapCut, I generated and styled dynamic animated auto-captions with custom brand highlights. Synchronizing keyframe zooms and sound effects to key speech moments created energetic reels that capture attention within the critical 3-second hook window.',
-    keyTakeaway: 'Dynamic auto-captions, visual keyframe hooks, and punchy sound design in CapCut turn casual viewers into engaged audiences.',
+    preview: 'Working directly inside the Shopify page builder: creating high-converting sections and customer proof blocks...',
+    fullContent: 'Stepping into Shopify landing page development in Week 3 was an exciting milestone. Sitting at my workstation, I built responsive page sections that connect customer psychology with immediate action. Learning how to structure pain points, before-and-after photo reviews, and sticky Add-to-Cart buttons gave me a deep appreciation for conversion rate optimization (CRO).',
+    keyTakeaway: 'High-converting landing pages combine technical responsiveness with psychological clarity: providing undeniable proof and removing purchase friction.',
   },
   {
     week: 4,
