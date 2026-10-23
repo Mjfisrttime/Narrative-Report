@@ -50,6 +50,39 @@ export const AboutCompany = () => {
               </div>
             </GlassCard>
 
+            {/* Official Agency Office & Workspace Showcase */}
+            {company.officeImage && (
+              <GlassCard padding="lg" hover="glow" className="overflow-hidden">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+                  <div className="flex items-center gap-2.5">
+                    <div className="w-8 h-8 rounded-lg bg-[#53ddfc]/20 flex items-center justify-center text-[#53ddfc]">
+                      <IconResolver name="Building" size={18} />
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-bold font-sora text-white">Agency Office & Workspace</h3>
+                      <p className="text-xs text-[#83b2c8]">{company.hq}</p>
+                    </div>
+                  </div>
+                  <span className="text-xs font-semibold text-[#ffb703] bg-[#ffb703]/10 border border-[#ffb703]/30 px-3 py-1 rounded-full w-max">
+                    Official Workplace
+                  </span>
+                </div>
+                
+                <div className="relative rounded-xl overflow-hidden border border-white/10 shadow-2xl group">
+                  <img 
+                    src={company.officeImage} 
+                    alt="SOARHIGH DIGITAL MARKETING SOLUTION Office"
+                    className="w-full h-72 sm:h-80 md:h-96 object-cover object-center group-hover:scale-[1.02] transition-transform duration-500" 
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent flex items-end p-4 sm:p-6">
+                    <p className="text-xs sm:text-sm text-[#c5ebff] font-medium leading-relaxed drop-shadow">
+                      The collaborative SOARHIGH workspace: high-performance workstations for Shopify landing page development, CapCut video editing suites, and active team task tracking via Lark.
+                    </p>
+                  </div>
+                </div>
+              </GlassCard>
+            )}
+
             <h3 className="text-xl font-bold font-sora text-white mt-12 mb-6">Core Values</h3>
             <div className="grid sm:grid-cols-2 gap-4">
               {company.values.map((val, idx) => (

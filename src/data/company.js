@@ -7,6 +7,7 @@ export const company = {
   name: 'SOARHIGH DIGITAL MARKETING SOLUTION',
   tagline: 'Web Design, Landing Page Development & Digital Content Creation',
   logo: '/soarhigh-logo.png',
+  officeImage: '/office.jpg',
   icon: 'MonitorPlay',
   founded: '2021',
   hq: 'Prk. Avocado Maroon, Purisima, Tago, Surigao del Sur',

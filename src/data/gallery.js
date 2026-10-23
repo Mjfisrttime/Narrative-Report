@@ -10,11 +10,11 @@ export const galleryCategories = ['All', 'Workspace', 'Activities', 'Team', 'Eve
 export const galleryItems = [
   {
     id: 1,
-    title: 'Workstation Setup & Lark Onboarding',
+    title: 'SOARHIGH Office & Workstation Setup',
     date: 'June 29, 2026',
     category: 'Workspace',
-    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800',
-    description: 'Setting up the workstation on Day 1 with CapCut, Shopify, and Lark for daily task management.',
+    image: '/office.jpg',
+    description: 'The real SOARHIGH DIGITAL MARKETING SOLUTION agency office in Tago: team workstations, video editing setups, and agile task execution on Lark.',
   },
   {
     id: 2,

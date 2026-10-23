@@ -9,7 +9,7 @@ export const blogPosts = [
     excerpt: 'Starting my 324-hour OJT journey at SOARHIGH DIGITAL MARKETING SOLUTION on June 29, 2026: mastering Lark for task management, daily check-ins, and team workflows.',
     date: 'July 3, 2026',
     readTime: '4 min read',
-    coverImage: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200',
+    coverImage: '/office.jpg',
     tags: ['#Lark', '#TaskManagement', '#SoarhighDigital', '#Onboarding'],
     featured: false,
     author: {
