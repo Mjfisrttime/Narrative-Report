@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { PageTransition } from '../components/PageTransition';
 import { SectionHeader } from '../components/SectionHeader';
 import { StatGrid } from '../components/StatGrid';
@@ -11,6 +12,24 @@ import { usePageTitle } from '../hooks/usePageTitle';
 export const Certificate = () => {
   usePageTitle('Certificate of Completion');
   const [fullscreenOpen, setFullscreenOpen] = useState(false);
+
+  // Handle escape key and lock body scroll when fullscreen lightbox is open
+  useEffect(() => {
+    if (!fullscreenOpen) return;
+
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') setFullscreenOpen(false);
+    };
+    window.addEventListener('keydown', handleKeyDown);
+
+    const originalOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+      document.body.style.overflow = originalOverflow;
+    };
+  }, [fullscreenOpen]);
 
   return (
     <PageTransition>
@@ -115,42 +134,61 @@ export const Certificate = () => {
           <StatGrid stats={certificate.achievements} columns={4} />
         </div>
 
-        {/* Fullscreen Modal / Lightbox */}
-        {fullscreenOpen && (
+        {/* Fullscreen Modal / Lightbox - Rendered via createPortal to spread across entire screen */}
+        {fullscreenOpen && createPortal(
           <div 
-            className="fixed inset-0 z-[150] bg-black/95 backdrop-blur-md flex items-center justify-center p-3 sm:p-6 overflow-auto"
-            onClick={() => setFullscreenOpen(false)}
+            className="fixed inset-0 z-[100] flex items-center justify-center p-3 sm:p-6 md:p-8 lg:p-10 overflow-y-auto"
+            style={{ margin: 0 }}
+            role="dialog"
+            aria-modal="true"
+            aria-label="Certificate Fullscreen Viewer"
           >
-            <div className="relative max-w-6xl w-full my-auto flex flex-col items-center">
-              {/* Close Button */}
-              <button
-                onClick={() => setFullscreenOpen(false)}
-                className="absolute -top-12 right-0 p-2.5 rounded-full bg-white/10 hover:bg-white/20 text-white transition-all cursor-pointer"
-                aria-label="Close fullscreen view"
-              >
-                <IconResolver name="X" size={22} />
-              </button>
+            {/* Full Viewport Dark Backdrop */}
+            <div 
+              className="fixed inset-0 bg-black/90 backdrop-blur-md transition-opacity cursor-pointer"
+              onClick={() => setFullscreenOpen(false)}
+              aria-hidden="true"
+            />
 
-              <img 
-                src={certificate.image} 
-                alt="Certificate of Completion Fullscreen" 
-                className="max-h-[85vh] w-auto max-w-full rounded-xl shadow-2xl border border-white/20 object-contain"
-                onClick={(e) => e.stopPropagation()}
-              />
+            {/* Modal Dialog Container - Spread Wide */}
+            <div 
+              className="relative z-10 w-full max-w-5xl xl:max-w-6xl my-auto animate-in fade-in zoom-in-95 duration-200 flex flex-col items-center"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {/* Floating Close Button */}
+              <div className="w-full flex justify-end mb-3">
+                <button
+                  onClick={() => setFullscreenOpen(false)}
+                  className="p-2.5 rounded-full bg-black/70 hover:bg-yellow-400 text-white hover:text-[#001018] border border-white/20 transition-all cursor-pointer backdrop-blur-md shadow-xl flex items-center justify-center group"
+                  aria-label="Close fullscreen view"
+                >
+                  <IconResolver name="X" size={20} className="group-hover:scale-110 transition-transform" />
+                </button>
+              </div>
 
+              {/* Certificate Image in High-Resolution Spread */}
+              <div className="w-full bg-[#001824] border border-yellow-500/30 rounded-2xl p-3 sm:p-5 shadow-2xl flex items-center justify-center overflow-hidden">
+                <img 
+                  src={certificate.image} 
+                  alt="Certificate of Completion Fullscreen" 
+                  className="max-h-[78vh] w-auto max-w-full rounded-xl shadow-2xl object-contain mx-auto"
+                />
+              </div>
+
+              {/* Download CTA Bar */}
               <div className="mt-4 flex items-center gap-3">
                 <a
                   href={certificate.image}
                   download="Mistiso_A_Judyawon_OJT_Certificate.jpg"
-                  onClick={(e) => e.stopPropagation()}
-                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-yellow-400 to-amber-500 text-[#001018] font-bold text-xs shadow-lg hover:brightness-110 transition-all"
+                  className="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl bg-gradient-to-r from-yellow-400 to-amber-500 hover:from-yellow-300 hover:to-amber-400 text-[#001018] font-bold text-xs shadow-lg shadow-yellow-500/20 transition-all cursor-pointer"
                 >
-                  <IconResolver name="Download" size={14} />
-                  <span>Download High-Resolution Image</span>
+                  <IconResolver name="Download" size={15} />
+                  <span>Download High-Resolution Certificate</span>
                 </a>
               </div>
             </div>
-          </div>
+          </div>,
+          document.body
         )}
       </div>
     </PageTransition>

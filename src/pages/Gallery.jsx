@@ -61,22 +61,44 @@ export const Gallery = () => {
 
         <Modal isOpen={isOpen} onClose={close}>
           {current && (
-            <div className="flex flex-col items-center">
-              <img 
-                src={current.image} 
-                alt={current.title} 
-                className="max-h-[75vh] object-contain rounded-lg shadow-2xl"
-              />
-              <div className="w-full flex justify-between items-center mt-6 px-4">
-                <button onClick={prev} aria-label="Previous image" className="p-3 rounded-full bg-[#001c27] border border-white/10 text-white hover:bg-[#53ddfc]/20 transition-colors">
-                  <IconResolver name="ChevronLeft" size={24} />
+            <div className="bg-[#001824] border border-[#53ddfc]/30 rounded-2xl p-4 sm:p-6 shadow-2xl flex flex-col items-center">
+              <div className="relative w-full max-h-[72vh] flex items-center justify-center overflow-hidden rounded-xl bg-black/60">
+                <img 
+                  src={current.image} 
+                  alt={current.title} 
+                  className="max-h-[72vh] w-auto max-w-full object-contain rounded-xl shadow-2xl"
+                />
+              </div>
+
+              {/* Caption and Navigation Bar */}
+              <div className="w-full flex items-center justify-between mt-5 pt-4 border-t border-white/10 gap-4">
+                <button 
+                  onClick={prev} 
+                  aria-label="Previous image" 
+                  className="p-3 rounded-full bg-[#002130] hover:bg-[#53ddfc] text-white hover:text-[#001018] border border-white/10 transition-all cursor-pointer shadow shrink-0"
+                >
+                  <IconResolver name="ChevronLeft" size={22} />
                 </button>
-                <div className="text-center">
-                  <h3 className="text-xl font-bold font-sora text-white">{current.title}</h3>
-                  <p className="text-[#83b2c8]">{current.date}</p>
+
+                <div className="text-center flex-1 min-w-0">
+                  <div className="flex items-center justify-center gap-2 mb-1">
+                    <span className="text-[11px] font-bold uppercase tracking-wider text-[#53ddfc] bg-[#002b3d] px-2.5 py-0.5 rounded-full border border-[#53ddfc]/20">
+                      {current.category}
+                    </span>
+                    <span className="text-xs text-[#83b2c8]">{current.date}</span>
+                  </div>
+                  <h3 className="text-lg sm:text-xl font-bold font-sora text-white truncate">{current.title}</h3>
+                  {current.description && (
+                    <p className="text-xs sm:text-sm text-[#83b2c8] mt-1 max-w-xl mx-auto line-clamp-2">{current.description}</p>
+                  )}
                 </div>
-                <button onClick={next} aria-label="Next image" className="p-3 rounded-full bg-[#001c27] border border-white/10 text-white hover:bg-[#53ddfc]/20 transition-colors">
-                  <IconResolver name="ChevronRight" size={24} />
+
+                <button 
+                  onClick={next} 
+                  aria-label="Next image" 
+                  className="p-3 rounded-full bg-[#002130] hover:bg-[#53ddfc] text-white hover:text-[#001018] border border-white/10 transition-all cursor-pointer shadow shrink-0"
+                >
+                  <IconResolver name="ChevronRight" size={22} />
                 </button>
               </div>
             </div>
