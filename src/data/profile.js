@@ -15,23 +15,23 @@ export const profile = {
   schoolFullName: 'North Eastern Mindanao State University',
 
   // OJT info
-  company: 'Virtual Assistant Solutions',
-  companyTagline: 'Professional Remote Assistance & Digital Media Services',
+  company: 'SOARHIGH DIGITAL MARKETING SOLUTION',
+  companyTagline: 'Web Design, Landing Page Development & Digital Content Creation',
   duration: 'June 29 – August 15, 2026',
   totalHours: '324 Hours',
-  role: 'Virtual Assistant & Multimedia Intern',
-  supervisor: '[Supervisor TBD]',
+  role: 'Web Design & Digital Media Intern',
+  supervisor: 'John Ryan M. Medrano (CEO)',
   coordinator: '[OJT Coordinator TBD]',
-  department: 'Creative Media & Web Solutions',
+  department: 'Web Design & Digital Media Team',
 
   // Hero section content
-  heroTagline: 'BSCS | NEMSU | Virtual Assistant OJT',
+  heroTagline: 'BSCS | NEMSU | Soarhigh Digital OJT',
   heroGreeting: "Hi, I'm",
   heroDescription:
-    'A passionate Computer Science student from North Eastern Mindanao State University, documenting my 324-hour On-the-Job Training journey in virtual assistance — gaining hands-on industry experience in landing page design, video editing, client support, and digital productivity solutions.',
+    'A passionate Computer Science student from North Eastern Mindanao State University, documenting my 324-hour On-the-Job Training journey at SOARHIGH DIGITAL MARKETING SOLUTION — gaining practical experience in Web Design, Landing Page Development, and Digital Content Creation.',
 
   // Bio used in About / Home
-  bio: 'A passionate Computer Science student with a strong drive for web development, video editing, and modern digital workflows. Completed my 324-hour OJT (June 29 – August 15, 2026) at a Virtual Assistant company, delivering 40+ client tasks including responsive landing page development, engaging video content creation, and remote operational support.',
+  bio: 'A passionate Computer Science student with a strong drive for web development, video editing, and modern digital workflows. Successfully completed 324 hours of On-the-Job Training (June 29 – August 15, 2026) at SOARHIGH DIGITAL MARKETING SOLUTION, gaining hands-on expertise in responsive landing page engineering, video editing, and digital media production.',
 
   // Stats displayed on Home page and reused elsewhere
   stats: [
