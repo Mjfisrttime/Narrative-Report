@@ -96,7 +96,7 @@ export const blogPosts = [
     excerpt: 'Transitioning to e-commerce web design: structuring high-converting landing pages on Shopify with customer journeys that drive sales.',
     date: 'July 25, 2026',
     readTime: '5 min read',
-    coverImage: 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&q=80&w=1200',
+    coverImage: '/lark-workspace.png',
     tags: ['#Shopify', '#LandingPage', '#ECommerce', '#WebDesign'],
     featured: false,
     author: {
@@ -125,7 +125,7 @@ export const blogPosts = [
     excerpt: 'Bringing designs to life on Shopify: configuring custom liquid blocks, product bundles, sticky add-to-cart bars, and embedded CapCut video clips.',
     date: 'August 1, 2026',
     readTime: '6 min read',
-    coverImage: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=1200',
+    coverImage: '/shopify-landing-page.png',
     tags: ['#Shopify', '#WebDev', '#ResponsiveDesign', '#ConversionOptimization'],
     featured: true,
     author: {
@@ -183,7 +183,7 @@ export const blogPosts = [
     excerpt: 'Finishing the 7-week OJT journey on August 15, 2026: completing 40+ client deliverables in Lark, mastering Shopify and CapCut, and receiving my official certificate.',
     date: 'August 15, 2026',
     readTime: '6 min read',
-    coverImage: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=1200',
+    coverImage: '/ojt-last-day.jpg',
     tags: ['#OJTCompleted', '#SoarhighDigital', '#NEMSU', '#Milestone'],
     featured: true,
     author: {

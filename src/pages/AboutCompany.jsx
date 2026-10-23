@@ -135,6 +135,48 @@ export const AboutCompany = () => {
                 {company.department.description}
               </p>
             </GlassCard>
+
+            <GlassCard padding="lg" hover="none" className="bg-[#001c27]/80">
+              <h3 className="text-[#83aaff] text-xs font-bold uppercase tracking-wider mb-4 flex items-center gap-2">
+                <IconResolver name="Layout" size={15} className="text-[#53ddfc]" /> Agency Workflow & Tools
+              </h3>
+              
+              <div className="space-y-4">
+                <div>
+                  <div className="flex items-center justify-between mb-1.5">
+                    <span className="text-xs font-bold text-white">Shopify Landing Pages</span>
+                    <span className="text-[10px] text-[#53ddfc] font-semibold bg-[#002b3d] px-2 py-0.5 rounded border border-[#53ddfc]/20">Client Project</span>
+                  </div>
+                  <div className="rounded-lg overflow-hidden border border-white/10 shadow group">
+                    <img 
+                      src="/shopify-landing-page.png" 
+                      alt="Shopify Landing Page Project" 
+                      className="w-full h-32 object-cover object-top group-hover:scale-105 transition-transform duration-300" 
+                    />
+                  </div>
+                  <p className="text-[11px] text-[#83b2c8] mt-1.5 leading-relaxed">
+                    Luxevéria® high-converting e-commerce landing page built during OJT.
+                  </p>
+                </div>
+
+                <div className="pt-3 border-t border-white/5">
+                  <div className="flex items-center justify-between mb-1.5">
+                    <span className="text-xs font-bold text-white">Lark Task Management</span>
+                    <span className="text-[10px] text-[#ac8aff] font-semibold bg-[#002b3d] px-2 py-0.5 rounded border border-[#ac8aff]/20">Internal SOP</span>
+                  </div>
+                  <div className="rounded-lg overflow-hidden border border-white/10 shadow group">
+                    <img 
+                      src="/lark-workspace.png" 
+                      alt="Lark Base Project Management" 
+                      className="w-full h-32 object-cover object-top group-hover:scale-105 transition-transform duration-300" 
+                    />
+                  </div>
+                  <p className="text-[11px] text-[#83b2c8] mt-1.5 leading-relaxed">
+                    Live Lark Base task board managing client product lines, bundle configurations, and urgent queues.
+                  </p>
+                </div>
+              </div>
+            </GlassCard>
           </div>
         </div>
       </div>

@@ -134,6 +134,39 @@ export const Certificate = () => {
           <StatGrid stats={certificate.achievements} columns={4} />
         </div>
 
+        {/* OJT Graduation Day Photo Showcase */}
+        <div className="max-w-5xl mx-auto mt-12">
+          <GlassCard padding="lg" hover="glow" className="overflow-hidden border-[#53ddfc]/20">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+              <div className="flex items-center gap-2.5">
+                <div className="w-8 h-8 rounded-lg bg-yellow-400/20 flex items-center justify-center text-yellow-400">
+                  <IconResolver name="Award" size={18} />
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold font-sora text-white">OJT Graduation & Certificate Presentation</h3>
+                  <p className="text-xs text-[#83b2c8]">August 15, 2026 • SOARHIGH DIGITAL MARKETING SOLUTION</p>
+                </div>
+              </div>
+              <span className="text-xs font-semibold text-[#53ddfc] bg-[#53ddfc]/10 border border-[#53ddfc]/30 px-3 py-1 rounded-full w-max">
+                Final Day of OJT
+              </span>
+            </div>
+
+            <div className="relative rounded-xl overflow-hidden border border-white/10 shadow-2xl group">
+              <img 
+                src="/ojt-last-day.jpg" 
+                alt="Mistiso A. Judyawon and co-interns holding Certificates of Completion on the last day of OJT"
+                className="w-full h-auto max-h-[520px] object-cover object-center group-hover:scale-[1.01] transition-transform duration-500" 
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent flex items-end p-4 sm:p-6">
+                <p className="text-xs sm:text-sm text-[#c5ebff] font-medium leading-relaxed drop-shadow">
+                  Officially completing 324 hours of On-the-Job Training: Mistiso A. Judyawon (center) proudly holding his Certificate of Completion alongside fellow interns and the SOARHIGH DIGITAL MARKETING SOLUTION team.
+                </p>
+              </div>
+            </div>
+          </GlassCard>
+        </div>
+
         {/* Fullscreen Modal / Lightbox - Rendered via createPortal to spread across entire screen */}
         {fullscreenOpen && createPortal(
           <div 
